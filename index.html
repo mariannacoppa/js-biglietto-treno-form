@@ -8,52 +8,56 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="mt-5 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="bg-purple">
+        <div class="box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mt-5 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                    </div>
+                    <form class="rounded-2">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <label for="exampleInputFirstAndLastName1" class="form-label"></label>
+                                <input type="text" class="form-control" id="firstAndLastName" placeholder="Nome Cognome" aria-describedby="FirstAndLastNameHelp">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label for="exampleInputkm1" class="form-label"></label>
+                                <input type="km" class="form-control" id="km" placeholder="km">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label for="exampleInputeta1" class="form-label"></label>
+                                <input type="number" class="form-control" id="eta" placeholder="età">
+                            </div>
+                            <!-- <div class="col-12 col-md-4 dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" id="eta">
+                                <li><a class="dropdown-item" href="#" id="minorenne">minorenne</a></li>
+                                <li><a class="dropdown-item" href="#" id="maggiorenne">maggiorenne</a></li>
+                                <li><a class="dropdown-item" href="#" id="senior">senior</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="col-1 m-2 btn btn-sm btn-primary" id="calculate-price">Submit</button>
+                            <button type="reset" class="col-1 m-2 btn btn-sm btn-secondary" id="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <form class="row">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <label for="exampleInputFirstAndLastName1" class="form-label"></label>
-                        <input type="text" class="form-control" id="firstAndLastName" placeholder="Nome Cognome" aria-describedby="FirstAndLastNameHelp">
+                    <div class="col-12 text-center">
+                        <section>
+                            <h2>IL TUO BIGLIETTO DEL TRENO</h2>
+                            <h6>Il costo del tuo biglietto è di:</h6>
+                            <span id="finale"></span>
+                            <span>&euro;</span>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <label for="exampleInputkm1" class="form-label"></label>
-                        <input type="km" class="form-control" id="km" placeholder="km">
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <label for="exampleInputeta1" class="form-label"></label>
-                        <input type="number" class="form-control" id="eta" placeholder="età">
-                    </div>
-                    <!-- <div class="col-12 col-md-4 dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" id="eta">
-                        <li><a class="dropdown-item" href="#" id="minorenne">minorenne</a></li>
-                        <li><a class="dropdown-item" href="#" id="maggiorenne">maggiorenne</a></li>
-                        <li><a class="dropdown-item" href="#" id="senior">senior</a></li>
-                        </ul>
-                    </div> -->
                 </div>
-                <div class="row">
-                    <button type="submit" class="col-1 m-2 btn btn-sm btn-primary" id="calculate-price">Submit</button>
-                    <button type="reset" class="col-1 m-2 btn btn-sm btn-secondary" id="reset">Reset</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <section>
-                    <h2>IL TUO BIGLIETTO DEL TRENO</h2>
-                    <h6>Il costo del tuo biglietto è di:</h6>
-                    <span id="finale"></span>
-                    <span>&euro;</span>
-                </section>
             </div>
         </div>
     </div>
