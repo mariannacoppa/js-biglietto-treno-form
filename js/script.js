@@ -4,7 +4,7 @@ btn.addEventListener('click', function () {
     let firstAndLastName = document.getElementById('FirstAndLastName').value;
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').id;
-    console.log(firstAndLastName, eta, prezzo_finale)
+    console.log(firstAndLastName, eta, prezzo_finale);
 });
 // let km = prompt("Insrisci i km da percorrere nel tuo viaggio");
 // console.log("km");
