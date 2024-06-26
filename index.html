@@ -11,28 +11,34 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form>
-                    <div class="mb-3 col-4">
-                      <label for="exampleInputFirstAndLastName1" class="form-label"></label>
-                      <input type="FirstAndLastName" class="form-control" id="exampleInputFirstAndLastName1" placeholder="Nome Cognome" aria-describedby="FirstAndLastNameHelp">
-                    </div>
-                    <div class="mb-3 col-4">
-                      <label for="exampleInputkm1" class="form-label"></label>
-                      <input type="km" class="form-control" id="exampleInputkm1" placeholder="km">
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">minorenne</a></li>
-                          <li><a class="dropdown-item" href="#">maggiorenne</a></li>
-                          <li><a class="dropdown-item" href="#">maggiorenne over 65</a></li>
-                        </ul>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                <div class="mt-5">Form</div>
             </div>
+            <form class="row">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <label for="exampleInputFirstAndLastName1" class="form-label"></label>
+                        <input type="text" class="form-control" id="firstAndLastName" placeholder="Nome Cognome" aria-describedby="FirstAndLastNameHelp">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="exampleInputkm1" class="form-label"></label>
+                        <input type="km" class="form-control" id="km" placeholder="km">
+                    </div>
+                    <div class="col-12 col-md-4 dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                        </button>
+                        <ul class="dropdown-menu" id="eta">
+                        <li><a class="dropdown-item" href="#" id="minorenne">minorenne</a></li>
+                        <li><a class="dropdown-item" href="#" id="maggiorenne">maggiorenne</a></li>
+                        <li><a class="dropdown-item" href="#" id="senior">senior</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="col-1 btn btn-sm btn-primary" id="calculate-price">Submit</button>
+                    <button type="reset" class="col-1 btn btn-sm btn-secondary" id="reset">Reset</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="container">
