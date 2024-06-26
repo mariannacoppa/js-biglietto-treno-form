@@ -12,7 +12,7 @@ MILESTONE 2: Solo una volta che il milestone 1 sarà completo e funzionante allo
 Nota: Se non vi sentite particolarmente creativi, questa potrebbe essere un’implementazione da seguire per il secondo milestone. Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
 
 Pseudocodice:
-1 creo form che richieda:
+1 creo form che richieda da parte dell'utente:
 2.1 Nome e Cognome del passeggero
 2.2 km da percorrere
 2.3 fascia d'età del passeggero
