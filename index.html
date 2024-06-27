@@ -12,10 +12,8 @@
         <div class="box d-flex flex-wrap align-content-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h2 class="mt-5 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-                    </div>
-                    <form class="rounded-2 bg-dark rounded-5">
+                    <div class="col-12 bg-dark rounded-5">
+                        <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <label for="exampleInputFirstAndLastName1" class="form-label"></label>
@@ -25,34 +23,30 @@
                                 <label for="exampleInputkm1" class="form-label"></label>
                                 <input type="km" class="form-control" id="km" placeholder="km">
                             </div>
-                            <div class="col-12 col-md-4">
+                            <!-- <div class="col-12 col-md-4">
                                 <label for="exampleInputeta1" class="form-label"></label>
                                 <input type="number" class="form-control" id="eta" placeholder="età">
-                            </div>
-                            <!-- <div class="col-12 col-md-4 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" id="eta">
-                                <li><a class="dropdown-item" href="#" id="minorenne">minorenne</a></li>
-                                <li><a class="dropdown-item" href="#" id="maggiorenne">maggiorenne</a></li>
-                                <li><a class="dropdown-item" href="#" id="senior">senior</a></li>
-                                </ul>
                             </div> -->
+                            <select name="eta" id="eta" class="col-12 col-md-4 rounded-2" required>
+                                <option value="">Seleziona età</option>
+                                <option value="0">Minorenne</option>
+                                <option value="1">Adulto</option>
+                                <option value="2">Over 65</option>
+                            </select>
                         </div>
                         <div class="row justify-content-center">
-                            <button type="submit" class="col-1 m-2 btn btn-sm btn-primary" id="calculate-price">Submit</button>
+                            <button type="submit" class="col-1 m-2 btn btn-sm btn-primary" id="calculate">Submit</button>
                             <button type="reset" class="col-1 m-2 btn btn-sm btn-secondary" id="reset">Reset</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="content text-center">
+                        <div class="content text-center bg-dark rounded-5">
                             <h2 class="mt-5">IL TUO BIGLIETTO DEL TRENO</h2>
-                            <section class="bg-dark rounded-5">
+                            <section>
                                 <h6>Il costo del tuo biglietto è di:</h6>
                                 <span id="finale"></span>
                                 <span>&euro;</span>
